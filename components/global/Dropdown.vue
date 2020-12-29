@@ -7,23 +7,18 @@
       <span v-for="n in 3" :key="n" class="line" />
     </div>
     <div v-show="open" class="menu">
-      <ul class="menu-item">
-        <a v-for="(link, i) in links" :key="i" :href="link.url" class="link">
-          <li :class="{ active: activeLink === link.name }">
-            {{ link.label }}
-          </li></a>
-      </ul>
-      <ul class="menu-item">
-        <a
-          v-for="item in languages"
-          :key="item.language"
-          class="secondary"
-          :href="item.url"
-        >
-          <li :class="{ active: lang === item.language }">
-            {{ item.language }}
-          </li></a>
-      </ul>
+      <n-link v-for="(link, i) in links" :key="i" :to="link.url" class="link">
+        {{ link.label }}
+      </n-link>
+
+      <!-- <a
+        v-for="item in languages"
+        :key="item.language"
+        class="secondary"
+        :href="item.url"
+      >
+        {{ item.language }}
+      </a> -->
     </div>
   </div>
 </template>
@@ -77,7 +72,7 @@ export default {
 
   .logo {
     margin-left: 20px;
-    max-width: 120px;
+    max-width: 110px;
   }
 }
 
@@ -90,27 +85,19 @@ export default {
 }
 
 .menu {
-  display: flex;
   justify-content: space-between;
   padding: 10px;
   transition: max-height 0.2s ease-out;
   width: 100%;
   z-index: 3;
 
-  ul {
-    list-style: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-  }
-
-  a {
+  .link {
     color: $base;
     display: block;
     padding: 8px 18px;
     text-decoration: none;
 
-    .active {
+    &.exact-active {
       color: $active;
     }
   }

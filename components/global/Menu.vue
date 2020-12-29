@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper" :class="{scrolled}">
     <div class="navigation">
       <n-link to="/" class="logo">
         <img src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
@@ -11,7 +11,6 @@
           :key="link.label"
           :to="link.url"
           class="link"
-          @click.prevent="activate(link.name)"
         >
           <div class="icon">
             <img :src="link.icon" :alt="link.label">
@@ -30,7 +29,6 @@
     <Dropdown
       :links="links"
       :languages="languages"
-      :active-link="activeLink"
       :lang="lang"
     />
   </div>
@@ -44,7 +42,7 @@ export default {
   },
   data () {
     return {
-      activeLink: '',
+      scrollPosition: 0,
       lang: 'SLO',
       links: [
         {
@@ -90,9 +88,20 @@ export default {
       ]
     }
   },
+  computed: {
+    scrolled () {
+      return this.scrollPosition > 80
+    }
+  },
+  mounted () {
+    document.addEventListener('scroll', this.updateScroll)
+  },
+  destroyed () {
+    document.removeEventListener('scroll', this.updateScroll)
+  },
   methods: {
-    activate (name) {
-      this.activeLink = name
+    updateScroll () {
+      this.scrollPosition = document.scrollingElement.scrollTop
     }
   }
 }
@@ -108,10 +117,6 @@ export default {
   background-color: rgba($white, 0.9);
   width: 100%;
   z-index: 20;
-
-  &.is-fixed {
-    position: fixed;
-  }
 }
 
 .navigation {
@@ -128,9 +133,17 @@ export default {
     display: block;
 
     img {
+      transition: width ease-in-out 250ms, padding ease-in-out 250ms;
       display: block;
       width: 200px;
       padding: 1rem 0;
+    }
+
+    .scrolled & {
+      img {
+        width: 120px;
+        padding: 10px 0;
+      }
     }
   }
 
@@ -154,9 +167,23 @@ export default {
     text-decoration: none;
 
     .icon {
+      transition: height ease-in-out 250ms;
       display: flex;
-      height: 60px;
+      height: 50px;
       justify-content: center;
+
+      .scrolled & {
+        height: 30px;
+      }
+    }
+
+    .label {
+      transition: font-size ease-in-out 250ms;
+      margin-top: 10px;
+
+      .scrolled & {
+        font-size: 12px;
+      }
     }
 
     &.exact-active::after {
