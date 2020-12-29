@@ -1,8 +1,8 @@
 <template>
   <div class="nav-wrapper">
     <div class="navigation">
-      <n-link to="/">
-        <img class="logo" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+      <n-link to="/" class="logo">
+        <img src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
       </n-link>
 
       <div class="links">
@@ -126,8 +126,12 @@ export default {
 
   .logo {
     display: block;
-    max-width: 200px;
-    padding: 1rem 0;
+
+    img {
+      display: block;
+      width: 200px;
+      padding: 1rem 0;
+    }
   }
 
   .links {

@@ -11,6 +11,7 @@
       :icon="block.icon"
       :photo="block.photo"
       :bg="block.bg"
+      :position="block.position"
       :reverse="i % 2 ? true : false"
     >
       <nuxt-content :document="block" />

@@ -1,6 +1,6 @@
 <template>
   <div class="image-block" :class="{reverse}" :style="`background-color: #${bg};`">
-    <div class="photo" :style="`background-image: url('/images/blocks/${photo}')`" />
+    <div class="photo" :style="`background-image: url('/images/blocks/${photo}'); background-position: center ${position}`" />
     <div class="content">
       <div class="icon mb-2">
         <img :src="`/icons/${icon}`" :alt="title">
@@ -30,6 +30,10 @@ export default {
     },
     photo: {
       default: '',
+      type: String
+    },
+    position: {
+      default: 'center',
       type: String
     },
     bg: {
