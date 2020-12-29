@@ -5,4 +5,4 @@ icon: list.svg
 photo: druzina.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus, metus at placerat tristique, turpis enim facilisis sem, ut ultricies turpis dui ut lorem. Pellentesque suscipit, dolor id dictum molestie, diam turpis dictum sem, in tristique nibh odio sit amet neque. Donec in magna non tortor tristique viverra.
+Aleš in Dagmar sta z vztrajnostjo in potrpežljivostjo  večala svoje vinograde in družino. Pet hčera se jima je rodilo v sedmih letih: Tjaša, Ana, Marjeta, Marjana in Teja. Zadnji pa je prišel na svet sin Domen. Prav tako so se povečali in obnavljali vinogradi.

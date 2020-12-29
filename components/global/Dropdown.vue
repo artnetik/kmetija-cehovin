@@ -1,6 +1,8 @@
 <template>
   <div class="dropdown">
-    <img src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+    <n-link to="/">
+      <img class="logo" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+    </n-link>
     <div :class="['hamburger', { open }]" @click="toggle()">
       <span v-for="n in 3" :key="n" class="line" />
     </div>
@@ -8,7 +10,7 @@
       <ul class="menu-item">
         <a v-for="(link, i) in links" :key="i" :href="link.url" class="link">
           <li :class="{ active: activeLink === link.name }">
-            {{ link.name }}
+            {{ link.label }}
           </li></a>
       </ul>
       <ul class="menu-item">
@@ -64,7 +66,8 @@ export default {
 @import '~assets/styles/mixins';
 
 .dropdown {
-  padding: 15px 0;
+  font-family: 'Courier Prime', monospace;
+  padding: 8px 0;
   position: relative;
   width: 100%;
 
@@ -72,14 +75,13 @@ export default {
     display: none;
   }
 
-  img {
+  .logo {
     margin-left: 20px;
-    width: 150px;
+    max-width: 120px;
   }
 }
 
 .secondary {
-  font-family: 'Courier Prime', monospace;
   font-size: 14px;
 
   .active {
@@ -105,8 +107,7 @@ export default {
   a {
     color: $base;
     display: block;
-    font-family: LLRG, monospace;
-    padding: 10px 20px;
+    padding: 8px 18px;
     text-decoration: none;
 
     .active {
@@ -123,7 +124,7 @@ export default {
   color: $base;
   font-size: 2rem;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 25px;
   width: auto;
 
@@ -134,10 +135,10 @@ export default {
   .line {
     background-color: $base;
     display: block;
-    height: 3px;
+    height: 2px;
     margin: 6px auto;
     transition: all 0.3s ease-in-out;
-    width: 28px;
+    width: 26px;
   }
 
   &.open {
@@ -150,7 +151,7 @@ export default {
     }
 
     .line:nth-child(3) {
-      transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
   }
 

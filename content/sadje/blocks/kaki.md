@@ -6,4 +6,4 @@ photo: kaki.jpg
 bg: F8EDE6
 ---
 
-V tridesetih letih skupne poti smo ustvarili domačijo, kamor se vsak rad vrača. Kjer se družimo, potožimo, nasmejemo in delamo. Ustvarjamo nove zgodbe in doživetja. S prijatelji si delimo izkušnje, kulinarične in poslovne. Druženje nas bogati in osrečuje.
+Zlato jabolko ali kot pravimo pri nas v Vipavski dolini, rajska jabolka. Pridelujemo mehko užiten kaki sorte Tipo, na novo pa smo zasadili tudi trdoužitnega Jiro.

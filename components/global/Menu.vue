@@ -1,7 +1,9 @@
 <template>
   <div class="nav-wrapper">
     <div class="navigation">
-      <img class="logo" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+      <n-link to="/">
+        <img class="logo" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+      </n-link>
 
       <div class="links">
         <n-link

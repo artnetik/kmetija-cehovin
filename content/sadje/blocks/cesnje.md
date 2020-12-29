@@ -6,4 +6,4 @@ photo: cesnje.jpg
 bg: F5DFE0
 ---
 
-Sed commodo porta cursus. Vivamus pretium augue ut molestie sollicitudin. Phasellus mattis ligula ut libero auctor malesuada. Ut gravida felis orci. Etiam cursus enim posuere tempus fermentum. Aenean nec sodales dolor. Morbi a euismod risus, non aliquet neque
+Češnje pridelujemo 12 let. Sadovnjake širimo in obnavljamo z novimi zgodnjimi sortami: Early Burlat, Burlat, Giorgia, Van, Lapins in druge. Dostavimo vam jih lahko po dogovoru v lični embalaži.

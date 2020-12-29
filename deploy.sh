@@ -1,6 +1,6 @@
 set -e
 # npm install
-npm run generate
+yarn generate
 cd dist
 echo 'kmetija-cehovin.si' > CNAME
 git init

@@ -1,8 +1,8 @@
 ---
-order: 4
+order: 3
 title: Pomoč na kmetiji
 icon: roza.svg
 photo: pomoc.jpg
 ---
 
-Vivamus pretium augue ut molestie sollicitudin. Phasellus mattis ligula ut libero auctor malesuada. Ut gravida felis orci. Etiam cursus enim posuere tempus fermentum. Aenean nec sodales dolor.
+Turistom omogočamo izkušnjo dela na kmetiji. Preizkusite se lahko v obiranju češenj, v času trgatve pa lahko preživite dan z nami v vinogradu, ob dobrem vinu prigrizku.

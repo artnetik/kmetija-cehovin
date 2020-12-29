@@ -1,8 +1,8 @@
 ---
-order: 2
+order: 1
 title: Degustacije
 icon: list.svg
 photo: degustacije.jpg
 ---
 
-Vivamus pretium augue ut molestie sollicitudin. Phasellus mattis ligula ut libero auctor malesuada. Ut gravida felis orci. Etiam cursus enim posuere tempus fermentum. Aenean nec sodales dolor.
+Ker se želimo čim bolj posvetiti gostom, ste vabljeni tudi na degustacije naših vin po predhodni najavi.
