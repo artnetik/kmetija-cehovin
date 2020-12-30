@@ -11,10 +11,10 @@
       </div>
       <div class="partners">
         <div class="logo">
-          <img src="/images/PRP-LEADER-EU-SLO.jpg">
+          <img src="/images/PRP-LEADER-EU-SLO.jpg" alt="PRP Leader EU SLO">
         </div>
         <div class="logo">
-          <img src="/images/regionalni-razvoj.jpg">
+          <img src="/images/regionalni-razvoj.jpg" alt="Regionialni razvoj">
         </div>
         <div class="logo ml-1">
           <div class="social">
