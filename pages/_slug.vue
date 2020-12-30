@@ -18,6 +18,17 @@
         <nuxt-content :document="block" />
       </ImageBlock>
     </div>
+    <div v-if="page.title === 'Novice'">
+      <NewsPost
+        v-for="post in news"
+        :key="post.id "
+        :title="post.title"
+        :photo="post.photo"
+        :date="post.createdAt"
+      >
+        <nuxt-content :document="post" />
+      </NewsPost>
+    </div>
     <Kontakt v-if="page.title === 'Kontakt'" />
     <Footer />
   </div>
@@ -35,7 +46,11 @@ export default {
       .catch(() => {
         return { blocks: [] }
       })
-    return { blocks, page }
+    const news = await $content('novice/objave').fetch()
+      .catch(() => {
+        return { news: [] }
+      })
+    return { blocks, page, news }
   }
 }
 </script>

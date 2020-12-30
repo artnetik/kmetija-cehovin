@@ -69,5 +69,14 @@ body {
       font-size: 18px;
     }
   }
+
+  a {
+    color: $ascent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 </style>

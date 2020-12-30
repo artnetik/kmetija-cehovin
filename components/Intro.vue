@@ -3,7 +3,7 @@
     <div class="foto" :style="`background-image: url('/images/${photo}')`">
       <slot />
     </div>
-    <div class="text-container mt-4">
+    <div v-if="body.body.children.length" class="text-container mt-4">
       <nuxt-content :document="body" />
     </div>
   </div>
@@ -29,7 +29,11 @@ export default {
 @import '~assets/styles/variables';
 
 .intro {
-  padding: 0 0 5rem;
+  padding: 0 0 2rem;
+
+  @include breakpoint(medium) {
+    padding: 0 0 5rem;
+  }
 }
 
 .foto {
