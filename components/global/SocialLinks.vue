@@ -1,6 +1,13 @@
 <template lang="html">
   <div :class="['social-links', color ]">
-    <a v-for="link in social" :key="link.id" :href="link.url" :title="`Kmetija Čehovin na ${link.network}`" target="_blank">
+    <a
+      v-for="link in social"
+      :key="link.id"
+      rel="noreferrer"
+      :href="link.url"
+      :title="`Kmetija Čehovin na ${link.network}`"
+      target="_blank"
+    >
       <img :src="`/images/social/${link.network}.svg`" :alt="link.network" :class="`icon-color ${link.network}`">
     </a>
   </div>
