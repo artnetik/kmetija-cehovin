@@ -45,7 +45,7 @@ body {
 }
 
 .text-container {
-  color: $base;
+  color: $secondary;
   margin-left: auto;
   margin-right: auto;
   max-width: 705px;
@@ -58,12 +58,16 @@ body {
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-family:
-      CourierPrime,
+      'Courier Prime',
       monospace;
     line-height: 1.5em;
     margin-bottom: 1rem;
+
+    @include breakpoint(medium) {
+      font-size: 18px;
+    }
   }
 }
 </style>

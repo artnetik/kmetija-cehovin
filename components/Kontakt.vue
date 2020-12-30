@@ -1,28 +1,32 @@
 <template>
   <div id="kontakt" class="kontakt">
-    <Title>Kontakt <template v-slot:subtitle>Stopite v stik z nami</template></Title>
+    <div class="cell map">
+      <gmap-map :center="center" :map-type-id="'roadmap'" :zoom="10">
+        <gmap-marker
+          v-for="(item, index) in markers"
+          :key="index"
+          :position="item.position"
+          @click="center = item.position"
+        />
+      </gmap-map>
+    </div>
+
     <div class="row">
-      <div class="cell map">
-        <gmap-map :center="center" :map-type-id="'roadmap'" :zoom="10">
-          <gmap-marker
-            v-for="(item, index) in markers"
-            :key="index"
-            :position="item.position"
-            @click="center = item.position"
-          />
-        </gmap-map>
-      </div>
+      <div class="cell photo" />
       <div class="cell address">
         <div class="logo mb-2">
-          <img width="220" src="/images/ana-bella-logo-white.svg" alt="Ana Bella Logo">
+          <img width="220" src="/images/cehovin-logo-white.svg" alt="Kmetija Čehovin">
         </div>
         <address class="naslov">
+          <strong>Kmetija Čehovin</strong><br>
           Dagmar in Aleš Čehovin<br>
           Brje 76 b<br>
           5263 Dobravlje - Slovenija<br>
           <br>
           Aleš: +386 41 507 675<br>
           Dagmar: +386 41 953 448<br>
+          <br>
+          E-mail <a href="mailto:cehovinster@gmail.com">cehovinster@gmail.com</a>
         </address>
       </div>
     </div>
@@ -48,8 +52,6 @@ export default {
 @import '~assets/styles/mixins';
 
 .kontakt {
-  padding: 4rem 0 0;
-
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +63,7 @@ export default {
   }
 
   .address {
-    background: #3f3e3f;
+    background: $secondary;
     color: $white;
     display: grid;
     font-family:
@@ -74,11 +76,26 @@ export default {
 
   address {
     font-style: normal;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .photo {
+    background: url('/images/blocks/kontakt.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-width: 400px;
+
+    @include breakpoint(medium) {
+      min-height: 900px;
+    }
   }
 }
 
 .vue-map-container {
-  max-width: 992px;
+  max-width: 100%;
   min-height: 400px;
   width: 100%;
 

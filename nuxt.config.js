@@ -5,7 +5,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Na kmetiji Čehovin se poleg vinogradništva in pridelavi vrhunskih vin posvečamo tudi drugemu sadju. V dolini imamo še nasad kakijev in češenj.' }
     ],
     link: [
       {
@@ -35,7 +35,9 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module'
   ],
-
+  env: {
+    VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+  },
   modules: [
     '@nuxt/content',
     ['vue-scrollto/nuxt', {

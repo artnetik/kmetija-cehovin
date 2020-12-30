@@ -39,7 +39,7 @@ export default {
 
   a {
     align-items: center;
-    background: $base;
+    background: $secondary;
     border-radius: 60px;
     display: flex;
     height: 42px;

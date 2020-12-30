@@ -64,13 +64,13 @@ export default {
   background-color: #fff;
   background-size: cover;
   background-position: center bottom;
+  min-height: 400px;
 }
 
 .content {
   align-self: center;
   justify-self: center;
-  color: $base;
-  padding: 1rem;
+  padding: 2rem 1rem;
 
   @include breakpoint(medium) {
     padding: 4rem;
@@ -84,10 +84,6 @@ export default {
 .icon img {
   display: block;
   margin: 0 auto;
-}
-
-.text-container {
-  color: $text;
 }
 
 .image-block.reverse {

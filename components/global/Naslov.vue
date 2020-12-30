@@ -13,14 +13,22 @@
 export default {}
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '~assets/styles/variables';
+@import '~assets/styles/mixins';
+
 .section-title {
   display: inline-block;
   font-family: 'Caveat Brush', cursive;
-  font-size: 46px;
+  font-size: 38px;
   font-weight: normal;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
+  color: $secondary;
+
+  @include breakpoint(medium) {
+    font-size: 46px;
+  }
 }
 </style>

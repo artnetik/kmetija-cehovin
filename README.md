@@ -1,4 +1,4 @@
-# kmetija-cehovin
+# Kmetija Čehovin website
 
 ## Build Setup
 

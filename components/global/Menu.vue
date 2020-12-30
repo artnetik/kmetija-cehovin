@@ -65,11 +65,11 @@ export default {
           url: '/turizem',
           icon: '/icons/turizem.svg'
         },
-        {
-          label: 'Ponudba',
-          url: '/ponudba',
-          icon: '/icons/ponudba.svg'
-        },
+        // {
+        //   label: 'Ponudba',
+        //   url: '/ponudba',
+        //   icon: '/icons/ponudba.svg'
+        // },
         {
           label: 'Novice',
           url: '/novice',
@@ -114,7 +114,7 @@ export default {
 .nav-wrapper {
   top: 0;
   position: fixed;
-  background-color: rgba($white, 0.9);
+  background-color: rgba($white, 0.8);
   width: 100%;
   z-index: 20;
 }
@@ -123,7 +123,7 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 
   @include breakpoint('medium down') {
     display: none;

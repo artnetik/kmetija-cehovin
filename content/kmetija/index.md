@@ -1,5 +1,4 @@
 ---
-
 title: Dobrodošli
 photo: kmetija.jpg
 ---
