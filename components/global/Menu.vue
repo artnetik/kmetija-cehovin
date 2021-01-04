@@ -169,13 +169,9 @@ export default {
     .icon {
       transition: height ease-in-out 250ms;
       display: flex;
-      min-height: 50px;
+      height: 50px;
       justify-content: center;
       align-items: center;
-
-      img {
-        display: block;
-      }
 
       .scrolled & {
         height: 30px;
