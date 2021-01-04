@@ -1,6 +1,6 @@
 <template>
   <div class="intro">
-    <div class="foto" :style="`background-image: url('/images/${photo}')`">
+    <div class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
       <slot />
     </div>
     <div v-if="body.body.children.length" class="text-container mt-4">
@@ -18,6 +18,10 @@ export default {
     },
     photo: {
       default: '',
+      type: String
+    },
+    bgColor: {
+      default: '#8B8F5D',
       type: String
     }
   }
