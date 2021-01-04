@@ -25,6 +25,8 @@ jobs:
 
       - name: Generate
         run: yarn run generate
+        env:
+          VUE_APP_GOOGLE_MAPS_API_KEY: ${{ secrets.MAPS_API }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
