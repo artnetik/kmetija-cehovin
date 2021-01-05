@@ -17,10 +17,6 @@ export default {
         rel: 'icon',
         type: 'image/png',
         href: '/favicon.png'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Courier+Prime:wght@400;700&display=swap'
       }
     ]
   },
@@ -37,9 +33,19 @@ export default {
   components: true,
 
   buildModules: [
+    '@nuxtjs/google-fonts',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module'
   ],
+  googleFonts: {
+    families: {
+      'Caveat+Brush': true,
+      'Courier+Prime': {
+        wght: [400, 700]
+      }
+    },
+    display: 'swap'
+  },
   env: {
     VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
   },
