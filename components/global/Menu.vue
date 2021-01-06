@@ -2,22 +2,28 @@
   <div class="nav-wrapper" :class="{scrolled}">
     <div class="navigation">
       <n-link to="/" class="logo">
-        <img src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
+        <img width="200" height="133" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
       </n-link>
 
       <div class="links">
         <n-link
           v-for="link in links"
-          :key="link.label"
-          :to="link.url"
+          :key="link.id"
+          :to="link.menu ? link.menu.url : link.dir"
           class="link"
         >
           <div class="icon">
-            <img :src="link.icon" :alt="link.label">
+            <img
+              :width="link.icon.width"
+              :height="link.icon.height"
+              :src="link.icon.src"
+              :alt="link.title"
+            >
           </div>
-          <div class="label">
-            {{ link.label }}
-          </div>
+          <div
+            class="label"
+            v-text="link.menu ? link.menu.label : link.title "
+          />
         </n-link>
       </div>
       <!-- <div class="languages">
@@ -44,43 +50,7 @@ export default {
     return {
       scrollPosition: 0,
       lang: 'SLO',
-      links: [
-        {
-          label: 'Kmetija',
-          url: '/',
-          icon: '/icons/kmetija.svg'
-        },
-        {
-          label: 'Vino',
-          url: '/vino',
-          icon: '/icons/vino.svg'
-        },
-        {
-          label: 'Sadje',
-          url: '/sadje',
-          icon: '/icons/sadje.svg'
-        },
-        {
-          label: 'Turizem',
-          url: '/turizem',
-          icon: '/icons/turizem.svg'
-        },
-        // {
-        //   label: 'Ponudba',
-        //   url: '/ponudba',
-        //   icon: '/icons/ponudba.svg'
-        // },
-        {
-          label: 'Novice',
-          url: '/novice',
-          icon: '/icons/novice.svg'
-        },
-        {
-          label: 'Kontakt',
-          url: '/kontakt',
-          icon: '/icons/kontakt.svg'
-        }
-      ],
+      links: [],
       languages: [
         { language: 'SLO', url: '#' },
         { language: 'ANG', url: '#' },
@@ -93,7 +63,13 @@ export default {
       return this.scrollPosition > 80
     }
   },
-  mounted () {
+  async mounted () {
+    this.links = await this.$content({ deep: true })
+      .where({ slug: 'index' })
+      .without(['body'])
+      .sortBy('id', 'des')
+      .fetch()
+
     document.addEventListener('scroll', this.updateScroll)
   },
   destroyed () {
@@ -133,15 +109,14 @@ export default {
     display: block;
 
     img {
-      transition: width ease-in-out 250ms, padding ease-in-out 250ms;
+      transition: height ease-in-out 250ms, padding ease-in-out 250ms;
       display: block;
-      width: 200px;
       padding: 1rem 0;
     }
 
     .scrolled & {
       img {
-        width: 120px;
+        height: 90px;
         padding: 10px 0;
       }
     }
@@ -158,9 +133,9 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Courier Prime', monospace;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 20px;
+    font-weight: normal;
     padding: 0 10px;
     position: relative;
     text-align: center;
@@ -174,7 +149,7 @@ export default {
       align-items: center;
 
       .scrolled & {
-        height: 30px;
+        height: 35px;
       }
     }
 
@@ -183,7 +158,7 @@ export default {
       margin-top: 10px;
 
       .scrolled & {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 

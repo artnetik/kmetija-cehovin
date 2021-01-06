@@ -38,9 +38,9 @@
 
 export default {
   async asyncData ({ $content, params, $router }) {
-    const param = params.slug || 'kmetija'
-    const page = await $content(param).fetch().then(data => data[0])
-    const blocks = await $content(`${param}/blocks`)
+    const slug = params.slug || 'kmetija'
+    const page = await $content(slug).fetch().then(data => data[0])
+    const blocks = await $content(`${slug}/blocks`)
       .sortBy('order', 'asc')
       .fetch()
       .catch(() => {

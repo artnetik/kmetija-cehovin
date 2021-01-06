@@ -7,8 +7,13 @@
       <span v-for="n in 3" :key="n" class="line" />
     </div>
     <div v-show="open" class="menu">
-      <n-link v-for="(link, i) in links" :key="i" :to="link.url" class="link">
-        {{ link.label }}
+      <n-link
+        v-for="(link, i) in links"
+        :key="i"
+        :to="link.menu ? link.menu.url : link.dir"
+        class="link"
+      >
+        <span v-text="link.menu ? link.menu.label : link.title " />
       </n-link>
 
       <!-- <a

@@ -1,6 +1,11 @@
 ---
+id: 6
 title: Kontakt
 photo: kontakt.jpg
+icon:
+ src: icons/kontakt.svg
+ width: 43
+ height: 27
 ---
 
 <Naslov>Kako do nas</Naslov>

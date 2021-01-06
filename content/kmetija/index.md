@@ -1,6 +1,14 @@
 ---
+id: 1
 title: Dobrodošli
+menu:
+  label: Kmetija
+  url: '/'
 photo: kmetija.jpg
+icon:
+ src: icons/kmetija.svg
+ width: 47
+ height: 39
 ---
 
 <Naslov>Kmetija Čehovin</Naslov>

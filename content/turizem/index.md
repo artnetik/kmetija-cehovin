@@ -1,6 +1,11 @@
 ---
+id: 4
 title: Turizem
 photo: turizem.jpg
+icon:
+ src: icons/turizem.svg
+ width: 48
+ height: 38
 ---
 
 <Naslov>Turizem</Naslov>

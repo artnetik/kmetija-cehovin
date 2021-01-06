@@ -1,6 +1,11 @@
 ---
+id: 2
 title: Vina
 photo: vina.jpg
+icon:
+  src: icons/vino.svg
+  width: 23
+  height: 39
 ---
 
 <Naslov>Vina</Naslov>

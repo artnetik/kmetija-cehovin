@@ -1,6 +1,11 @@
 ---
+id: 3
 title: Sadje
 photo: sadje.jpg
+icon:
+ src: icons/sadje.svg
+ width: 33
+ height: 40
 ---
 
 <Naslov>Sadje</Naslov>
