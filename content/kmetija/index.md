@@ -6,7 +6,7 @@ menu:
   url: '/'
 photo: kmetija.jpg
 icon:
- src: icons/kmetija.svg
+ src: /icons/kmetija.svg
  width: 47
  height: 39
 ---

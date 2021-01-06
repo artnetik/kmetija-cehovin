@@ -3,7 +3,7 @@ id: 6
 title: Kontakt
 photo: kontakt.jpg
 icon:
- src: icons/kontakt.svg
+ src: /icons/kontakt.svg
  width: 43
  height: 27
 ---
