@@ -8,7 +8,7 @@
     </div>
     <div v-show="open" class="menu">
       <n-link
-        v-for="(link, i) in links"
+        v-for="(link, i) in $store.state.links"
         :key="i"
         :to="link.menu ? link.menu.url : link.dir"
         class="link"
@@ -31,10 +31,6 @@
 <script>
 export default {
   props: {
-    links: {
-      type: Array,
-      default: () => []
-    },
     languages: {
       type: Array,
       default: () => []
@@ -66,7 +62,9 @@ export default {
 @import '~assets/styles/mixins';
 
 .dropdown {
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Caveat Brush', cursive;
+  text-align: center;
+  font-size: 16px;
   padding: 8px 0;
   position: relative;
   width: 100%;
@@ -76,14 +74,11 @@ export default {
   }
 
   .logo {
-    margin-left: 20px;
     max-width: 110px;
   }
 }
 
 .secondary {
-  font-size: 14px;
-
   .active {
     color: $active;
   }

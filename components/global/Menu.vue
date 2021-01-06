@@ -7,7 +7,7 @@
 
       <div class="links">
         <n-link
-          v-for="link in links"
+          v-for="link in $store.state.links"
           :key="link.id"
           :to="link.menu ? link.menu.url : link.dir"
           class="link"
@@ -33,7 +33,6 @@
       </div> -->
     </div>
     <Dropdown
-      :links="links"
       :languages="languages"
       :lang="lang"
     />
@@ -50,7 +49,6 @@ export default {
     return {
       scrollPosition: 0,
       lang: 'SLO',
-      links: [],
       languages: [
         { language: 'SLO', url: '#' },
         { language: 'ANG', url: '#' },
@@ -63,13 +61,7 @@ export default {
       return this.scrollPosition > 80
     }
   },
-  async mounted () {
-    this.links = await this.$content({ deep: true })
-      .where({ slug: 'index' })
-      .without(['body'])
-      .sortBy('id', 'des')
-      .fetch()
-
+  mounted () {
     document.addEventListener('scroll', this.updateScroll)
   },
   destroyed () {
