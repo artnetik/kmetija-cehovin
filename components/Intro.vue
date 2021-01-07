@@ -1,6 +1,6 @@
 <template>
   <div class="intro">
-    <div class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
+    <div ref="parallax" class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
       <slot />
     </div>
     <div v-if="body.body.children.length" class="text-container mt-4">
@@ -20,9 +20,55 @@ export default {
       default: '',
       type: String
     },
+    speedFactor: {
+      default: 0.5,
+      type: Number
+    },
     bgColor: {
       default: '#8B8F5D',
       type: String
+    }
+  },
+  data: () => ({
+    el: null
+  }),
+  mounted () {
+    this.el = this.$refs.parallax
+    window.requestAnimationFrame = window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (f) {
+          setTimeout(f, 1000 / 60)
+        }
+    document.addEventListener('scroll', this.scrollHandler)
+  },
+
+  beforeDestroy () {
+    document.removeEventListener('scroll', this.scrollHandler)
+  },
+
+  methods: {
+    animateElement () {
+      const animationValue = Math.floor(document.scrollingElement.scrollTop * this.speedFactor)
+      this.el.style.backgroundPositionY = `${animationValue}px`
+    },
+
+    scrollHandler () {
+      window.requestAnimationFrame(() => {
+        if (this.isInView(this.el)) {
+          this.animateElement()
+        }
+      })
+    },
+
+    isInView (el) {
+      const rect = el.getBoundingClientRect()
+
+      return (
+        rect.bottom >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+      )
     }
   }
 }
@@ -41,17 +87,14 @@ export default {
 }
 
 .foto {
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position-y: 0;
   background-size: cover;
   min-height: 100vh;
   position: relative;
   display: grid;
   align-content: center;
-
-  @include breakpoint(medium) {
-    min-height: 80vh;
-  }
+  will-change: background-position-y;
 }
 
 h1 {

@@ -40,11 +40,9 @@
 </template>
 
 <script>
-import Dropdown from './Dropdown'
+import { debounce } from 'vue-debounce'
+
 export default {
-  components: {
-    Dropdown
-  },
   data () {
     return {
       scrollPosition: 0,
@@ -62,10 +60,11 @@ export default {
     }
   },
   mounted () {
-    document.addEventListener('scroll', this.updateScroll)
+    this.handleDebouncedScroll = debounce(this.updateScroll, 10)
+    document.addEventListener('scroll', this.handleDebouncedScroll)
   },
   destroyed () {
-    document.removeEventListener('scroll', this.updateScroll)
+    document.removeEventListener('scroll', this.handleDebouncedScroll)
   },
   methods: {
     updateScroll () {
