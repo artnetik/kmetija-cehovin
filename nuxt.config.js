@@ -32,6 +32,10 @@ export default {
 
   components: true,
 
+  pageTransition: {
+    name: 'fade'
+  },
+
   buildModules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/eslint-module',

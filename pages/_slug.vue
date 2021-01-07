@@ -1,7 +1,6 @@
 <template>
   <div>
     <Intro :body="page" :photo="page.photo">
-      <Menu />
       <h1>{{ page.title }}</h1>
     </Intro>
     <div v-if="blocks.length">

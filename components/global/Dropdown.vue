@@ -13,7 +13,7 @@
         :to="link.menu ? link.menu.url : link.dir"
         class="link"
       >
-        <span v-text="link.menu ? link.menu.label : link.title " />
+        <span @click="open = false" v-text="link.menu ? link.menu.label : link.title " />
       </n-link>
 
       <!-- <a
@@ -122,10 +122,11 @@ export default {
   .line {
     background-color: $base;
     display: block;
-    height: 2px;
-    margin: 6px auto;
+    height: 3px;
+    margin: 5px auto;
     transition: all 0.3s ease-in-out;
     width: 26px;
+    border-radius: 25%;
   }
 
   &.open {
