@@ -5,7 +5,7 @@
         <img width="200" height="133" src="/images/cehovin-logo.svg" alt="Kmetija Čehovin">
       </n-link>
 
-      <div class="links">
+      <nav class="links">
         <n-link
           v-for="link in $store.state.links"
           :key="link.id"
@@ -25,7 +25,7 @@
             v-text="link.menu ? link.menu.label : link.title "
           />
         </n-link>
-      </div>
+      </nav>
       <!-- <div class="languages">
         <a v-for="item in languages" :key="item.language" class="lang" :href="item.url" :class="{ active: lang === item.language }">
           {{ item.language }}
@@ -170,23 +170,23 @@ export default {
   }
 }
 
-.languages {
-  font-family: 'Courier Prime', monospace;
+// .languages {
+//   font-family: 'Courier Prime', monospace;
 
-  .lang {
-    text-decoration: none;
-    color: $grey;
-    display: block;
-    font-size: 18px;
-    margin: 5px 0;
+//   .lang {
+//     text-decoration: none;
+//     color: $grey;
+//     display: block;
+//     font-size: 18px;
+//     margin: 5px 0;
 
-    &:hover {
-      color: $ascent;
-    }
+//     &:hover {
+//       color: $ascent;
+//     }
 
-    &.active {
-      color: $ascent;
-    }
-  }
-}
+//     &.active {
+//       color: $ascent;
+//     }
+//   }
+// }
 </style>

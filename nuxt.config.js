@@ -46,8 +46,8 @@ export default {
     },
     display: 'swap'
   },
-  env: {
-    VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+  publicRuntimeConfig: {
+    mapsApiKey: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
   },
   modules: [
     '@nuxt/content',
