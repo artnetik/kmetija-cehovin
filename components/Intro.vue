@@ -60,6 +60,7 @@ h1 {
   font-size: 50px;
   color: #fff;
   text-align: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
   @include breakpoint(medium) {
     padding-top: 3rem;
