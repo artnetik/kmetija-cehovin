@@ -1,8 +1,10 @@
 ---
 order: 3
-title: Pomoč na kmetiji
+title: Pomoč pri delu na kmetiji
 icon: roza.svg
 photo: pomoc.jpg
 ---
 
-Turistom omogočamo izkušnjo dela na kmetiji. Preizkusite se lahko v obiranju češenj, v času trgatve pa lahko preživite dan z nami v vinogradu, ob dobrem vinu prigrizku.
+Sodelujte z naravo. Preizkusite se v obiranju češenj, v času trgatve pa preživite dan z nami in obiralci v vinogradu, ob dobrem vinu in domačih prigrizkih.
+
+[ Prijavite se ]

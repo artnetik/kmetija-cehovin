@@ -5,4 +5,6 @@ icon: cvet.svg
 photo: sprostitev.jpg
 ---
 
-Organiziramo piknik z lokalno hrano in z vini iz naše kleti. Voden ogled vinogradov.
+Privoščite si oddih s čudovitimi razgledi in vodenim ogledov vinogradov, piknik z odličnimi domačimi jedmi in vini iz naše vinske kleti.
+
+[ Rezervirajte termin ]

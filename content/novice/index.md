@@ -1,7 +1,8 @@
 ---
 id: 5
-title: Novice
+title: Novosti s kmetije
 photo: novice.jpg
+menu: Novice
 icon:
  src: /icons/novice.svg
  width: 38

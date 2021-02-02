@@ -1,8 +1,10 @@
 ---
 order: 1
-title: Degustacije
+title: Degustacije domačih vin
 icon: list.svg
 photo: degustacije.jpg
 ---
 
-Ker se želimo čim bolj posvetiti gostom, ste vabljeni tudi na degustacije naših vin po predhodni najavi.
+Degustacija je več kot okušanje. Je izkušnja okolja, narave in ljudi, s katerimi jo delite. Spoznajte naša vina, zgodbo in predanost.
+
+[ Rezervirajte termin za degustacijo ]

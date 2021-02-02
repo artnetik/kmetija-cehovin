@@ -67,7 +67,7 @@ export default {
 
       return (
         rect.bottom >= 0 &&
-          rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight)
       )
     }
   }
@@ -103,11 +103,13 @@ h1 {
   font-size: 50px;
   color: #fff;
   text-align: center;
+  margin: 0 auto;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
   @include breakpoint(medium) {
     padding-top: 3rem;
-    font-size: 80px;
+    font-size: 72px;
+    max-width: 700px;
   }
 }
 </style>

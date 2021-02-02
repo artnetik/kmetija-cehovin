@@ -1,8 +1,10 @@
 ---
 order: 1
-title: Poslanstvo in vizija
+title: Kakovostna butična vina
 icon: cvet.svg
 photo: poslanstvo.jpg
 ---
 
-Vinogradi in vino ostajajo naše glavno poslanstvo, svojo ponudbo pa v prihodnje širimo še na ostala področja, ki jih nudi Vipavska Dolina, zato kmalu pričakujte nove pristnosti in nepozabna doživetja.
+V naše vinograde in nasade vlagamo veliko časa in truda. Potrpežljivost, znanje in odlični pogoji se odražajo v vsakem kozarcu naših butičnih vin iz avtohtonih sort.
+
+[Več o naših vinih]

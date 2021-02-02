@@ -1,9 +1,7 @@
 ---
 id: 1
-title: Dobrodošli
-menu:
-  label: Kmetija
-  url: '/'
+title: Dobrodošli na sončni strani Vipavske doline
+menu: Kmetija
 photo: kmetija.jpg
 icon:
  src: /icons/kmetija.svg
@@ -11,9 +9,11 @@ icon:
  height: 39
 ---
 
-<Naslov>Kmetija Čehovin</Naslov>
+<Naslov>Pristno, naravno, domače.</Naslov>
 
-Na naši kmetiji se ne posvečamo le vinogradništvu in pridelavi vrhunskih vin. V dolini imamo še nasad kakijev in češenj. Najlepši letni čas, pomlad, odene
-naš nasad v belino, ki privablja mnoge žuželke. 
+Na naši kmetiji vas razvajamo s sadovi vinogradništva in sadjarstva.
 
-Trudimo se ohranjati integrirano in ekološko pridelavo. Spoštujemo pristno in čisto naravno okolje, v katerem živimo in pridelujemo naše pridelke.
+Od pomladi, ko naš v belino odet nasad obiščejo žuželke, do jeseni, ko narava radodarno postreže s sadovi skupnega dela.
+
+Obiščite nas in okusite bogastvo integrirane in ekološke pridelave, čistega okolja ter spoštovanja do narave in zemlje.
+

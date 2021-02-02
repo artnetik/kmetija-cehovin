@@ -17,7 +17,7 @@
         <nuxt-content :document="block" />
       </ImageBlock>
     </div>
-    <div v-if="page.title === 'Novice'">
+    <div v-if="page.menu === 'Novice'">
       <NewsPost
         v-for="post in news"
         :key="post.id "
@@ -28,7 +28,7 @@
         <nuxt-content :document="post" />
       </NewsPost>
     </div>
-    <Kontakt v-if="page.title === 'Kontakt'" />
+    <Kontakt v-if="page.menu === 'Kontakt'" />
     <Footer />
   </div>
 </template>

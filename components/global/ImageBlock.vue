@@ -76,7 +76,7 @@ export default {
     padding: 4rem;
 
     .text-container {
-      max-width: 500px;
+      max-width: 550px;
     }
   }
 }

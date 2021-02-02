@@ -1,17 +1,16 @@
 ---
 id: 2
-title: Vina
+title: Kakovostna butična in odprta vina
 photo: vina.jpg
+menu: Vino
 icon:
   src: /icons/vino.svg
   width: 23
   height: 39
 ---
 
-<Naslov>Vina</Naslov>
+<Naslov>Ustekleničena predanost</Naslov>
 
-Na kmetiji težimo k čim boljši kakovosti. V vinograde in nasade vlagamo veliko časa in truda. Želimo, da bodo naši izdelki butični, zato ohranjamo najboljše lege, ki jih kmetija premore. Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki še od nekdaj tu najbolj uspevajo.
+Na najboljših legah Vipavske doline pridelujemo primarno avtohtone vinske sorte, ki se tu najbolje počutijo. V vinograde in nasade vlagamo veliko časa in truda, kar se odraža v visoki kakovosti pridelanih vin.
 
-Trudimo se ohranjati integrirano in ekološko pridelavo. Spoštujemo pristno in čisto naravno okolje, v katerem živimo in pridelujemo naše pridelke.
-
-Rdeče sorte maceriramo od 5 do 8 dni, odvisno od sorte in letnika.
+Z integrirano in ekološko pridelavo ustvarjamo butična in odprta vina, ki utelešajo spoštovanje do pristne narave, domačega okolja in dediščine starejših generacij.

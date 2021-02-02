@@ -1,9 +1,11 @@
 ---
 order: 2
-title: Odprto vino
+title: Odprta in stekleničena vina
 icon: list.svg
 photo: vino.jpg
 position: top
 ---
 
-Ob blagovni znamki Ana Bella, pridelujemo še odprta in stekleničena vina: barbera, chardonnay, sauvignon, bele in rdeče zvrsti.
+Našo vinsko ponudbo dopolnjujemo z odprtimi in stekleničenimi vini, rubinasto barbero, večno klasiko chardonnayem ter iskrivim sauvignonom bele in rdeče zvrsti.
+
+Rdeče sorte maceriramo od pet do osem dni, odvisno od sorte in letnika.

@@ -1,9 +1,11 @@
 ---
 order: 1
-title: Češnje
+title: Češnje, sladke in hrustljave
 icon: list.svg
 photo: cesnje.jpg
 bg: F5DFE0
 ---
 
-Češnje pridelujemo 12 let. Sadovnjake širimo in obnavljamo z novimi zgodnjimi sortami: Early Burlat, Burlat, Giorgia, Van, Lapins in druge. Dostavimo vam jih lahko po dogovoru v lični embalaži.
+Češnje pridelujemo že dvanajst let. Obstoječe sadovnjake širimo in nadgrajujemo z novejšimi zgodnjimi sortami, kot so early burlat, burlat, giorgia, van, lapins in druge. 
+
+Pridružite se nam pri obirajnu in uživajte v sveže obranih češnjah ali pa naročite dostavo v lični embalaži.

@@ -13,14 +13,7 @@
 
 html {
   box-sizing: border-box;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -49,7 +42,7 @@ body {
   color: $secondary;
   margin-left: auto;
   margin-right: auto;
-  max-width: 705px;
+  max-width: 620px;
   padding: 1rem 1.5rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -60,9 +53,6 @@ body {
 
   p {
     font-size: 16px;
-    font-family:
-      'Courier Prime',
-      monospace;
     line-height: 1.5em;
     margin-bottom: 1rem;
 

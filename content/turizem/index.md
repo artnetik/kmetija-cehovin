@@ -1,13 +1,16 @@
 ---
 id: 4
-title: Turizem
+title: Dobrodošli v naravi
 photo: turizem.jpg
+menu: Turizem
 icon:
  src: /icons/turizem.svg
  width: 48
  height: 38
 ---
 
-<Naslov>Turizem</Naslov>
+<Naslov>Vzemite si dan zase</Naslov>
 
-Vabljeni v naš mali raj nad Vipavsko dolino, da doživite lepoto in zadovoljstvo, okusite vse tisto, kar pridelamo in z ljubeznijo ponudimo. Nastanite se v prijetnem ambientu in mirnem okolju, ter uživajte brezskrbno družabno življenje s čudovitimi razgledi na Vipavsko dolino.
+Naš mali raj vas vabi, da ustavite čas. Da doživite lepoto, ki vas obkroža in okusite sadove narave, ki jih z ljubeznijo ponudimo.
+
+Začutite mir v prijetnem ambientu, uživajte brezskrbno družabno življenje, naužijte se čudovitih razgledov in spoznajte naravo z vsemi čuti.

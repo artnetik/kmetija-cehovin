@@ -6,6 +6,8 @@ photo: ana-bella-vina.jpg
 position: bottom
 ---
 
-Zakaj Ana Bella? Čeprav je vino srednjega spola, je trta ženskega. In kje iskati lepoto? V njeni moči, v njeni prvinskosti. Ko močna in nepremagljiva kljubuje burji, suši in mrazu, rodi tisto najboljše, žlahtno grozdje!
+Lepota vina je v moči trte, v njeni prvinskosti. Ko nepremagljiva kljubuje burji, suši in mrazu, rodi tisto najboljše, žlahtno grozdje.
 
-<a href="https://ana-bella.si" target="_blank" class="btn">Obišči ana-bella.si</a>
+To lepoto smo ustekleničili pod blagovno znamko Ana Bella.
+
+<a href="https://ana-bella.si" target="_blank" class="btn">Spoznajte vina Ana Bella</a>

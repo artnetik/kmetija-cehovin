@@ -1,13 +1,16 @@
 ---
 id: 3
-title: Sadje
+title: Sladki darovi narave
 photo: sadje.jpg
+menu: Sadje
 icon:
  src: /icons/sadje.svg
  width: 33
  height: 40
 ---
 
-<Naslov>Sadje</Naslov>
+<Naslov>Iz krošenj na mizo</Naslov>
 
-V dolini imamo še nasad kakijev in češenj. Najlepši letni čas, pomlad, odene naš nasad v belino, ki privablja  mnoge žuželke. Trudimo se ohranjati integrirano in ekološko pridelavo.
+Pogoji v Vipavski dolini so idealni za nasade kakijev in češenj.
+
+Od čudovite belo cvetoče pomladi do zlate jeseni vam naši nasadi postrežejo s sadovi integrirane in ekološke pridelave.
