@@ -62,6 +62,10 @@ export default {
     }]
   ],
 
+  content: {
+    liveEdit: false
+  },
+
   build: {
     loaders: {
       scss: { sourceMap: false }

@@ -1,7 +1,7 @@
 .btn {
-  border: 1px solid $base;
+  background-color: $base;
   border-radius: 5px;
-  color: $base !important;
+  color: $white !important;
   display: inline-block;
   font-weight: bold;
   padding: 8px 1.5rem;
@@ -10,7 +10,7 @@
   margin-top: 1rem;
 
   &:hover {
-    background-color: $base;
+    background-color: $active;
     color: $white !important;
     text-decoration: none !important;
   }

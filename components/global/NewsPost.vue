@@ -57,6 +57,14 @@ export default {
   padding: 1rem;
   margin: 0 auto;
   max-width: 1000px;
+
+  &:first-of-type {
+    margin-top: 3rem;
+  }
+
+  .responsive-margin {
+    margin: 0;
+  }
 }
 
 .photo {

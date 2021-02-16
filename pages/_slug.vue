@@ -28,7 +28,6 @@
         <nuxt-content :document="post" />
       </NewsPost>
     </div>
-    <Kontakt v-if="page.menu === 'Kontakt'" />
     <Footer />
   </div>
 </template>
@@ -38,14 +37,14 @@
 export default {
   async asyncData ({ $content, params, $router }) {
     const slug = params.slug || 'kmetija'
-    const page = await $content(slug).fetch().then(data => data[0])
+    const page = await $content().where({ slug }).fetch().then(data => data[0])
     const blocks = await $content(`${slug}/blocks`)
       .sortBy('order', 'asc')
       .fetch()
       .catch(() => {
         return { blocks: [] }
       })
-    const news = await $content('novice/objave').fetch()
+    const news = await $content('novice').fetch()
       .catch(() => {
         return { news: [] }
       })

@@ -38,39 +38,6 @@ body {
   max-width: 76rem;
 }
 
-.text-container {
-  color: $secondary;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 620px;
-  padding: 1rem 1.5rem;
-  padding-bottom: 3rem;
-  text-align: center;
-
-  @include breakpoint(medium) {
-    padding: 1rem;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.5em;
-    margin-bottom: 1rem;
-
-    @include breakpoint(medium) {
-      font-size: 18px;
-    }
-  }
-
-  a {
-    color: $ascent;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease-in-out;

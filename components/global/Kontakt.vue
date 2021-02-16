@@ -18,15 +18,7 @@
           <img width="220" src="/images/cehovin-logo-white.svg" alt="Kmetija Čehovin">
         </div>
         <address class="naslov">
-          <strong>Kmetija Čehovin</strong><br>
-          Dagmar in Aleš Čehovin<br>
-          Brje 76 b<br>
-          5263 Dobravlje - Slovenija<br>
-          <br>
-          Aleš: +386 41 507 675<br>
-          Dagmar: +386 41 953 448<br>
-          <br>
-          E-mail <a href="mailto:cehovinster@gmail.com">cehovinster@gmail.com</a>
+          <slot />
         </address>
       </div>
     </div>
@@ -72,13 +64,24 @@ export default {
     line-height: 1.5em;
     min-height: 400px;
     place-content: center;
+    padding: 2rem 0;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
   }
 
   address {
     font-style: normal;
+    white-space: pre-wrap;
 
     a {
       color: $white;
+    }
+
+    p {
+      margin: 0;
     }
   }
 

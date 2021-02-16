@@ -3,7 +3,7 @@
     <div ref="parallax" class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
       <slot />
     </div>
-    <div v-if="body.body.children.length" class="text-container mt-4">
+    <div v-if="body">
       <nuxt-content :document="body" />
     </div>
   </div>
@@ -78,14 +78,6 @@ export default {
 @import '~assets/styles/mixins';
 @import '~assets/styles/variables';
 
-.intro {
-  padding: 0 0 2rem;
-
-  @include breakpoint(medium) {
-    padding: 0 0 5rem;
-  }
-}
-
 .foto {
   background-repeat: no-repeat;
   background-position-y: 0;
@@ -103,6 +95,7 @@ h1 {
   font-size: 50px;
   color: #fff;
   text-align: center;
+  line-height: 1;
   margin: 0 auto;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
