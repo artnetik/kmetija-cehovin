@@ -9,7 +9,7 @@
         <n-link
           v-for="link in $store.state.links"
           :key="link.id"
-          :to="link.path"
+          :to="link.path === '/kmetija' ? '/' : link.path"
           class="link"
         >
           <div class="icon">

@@ -1,8 +1,19 @@
 <template>
-  <div class="text-container responsive-margin">
+  <div :class="{levo}" class="text-container responsive-margin">
     <slot />
   </div>
 </template>
+
+<script>
+export default {
+  porps: {
+    levo: {
+      default: false,
+      type: Boolean
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import '~assets/styles/mixins';
@@ -16,13 +27,17 @@
   margin-right: auto;
   max-width: 620px;
   padding: 1rem 1.5rem;
-  text-align: center;
 
   @include breakpoint(medium) {
     padding: 1rem;
   }
 
-  p {
+  &.levo {
+    text-align: left;
+  }
+
+  p,
+  li {
     font-size: 16px;
     line-height: 1.5em;
     margin-bottom: 1rem;

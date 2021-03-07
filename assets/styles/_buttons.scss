@@ -1,16 +1,16 @@
 .btn {
-  background-color: $base;
+  background-color: $green;
   border-radius: 5px;
   color: $white !important;
   display: inline-block;
   font-weight: bold;
-  padding: 8px 1.5rem;
+  padding: 10px 1.5rem;
   text-decoration: none;
   transition: all $quick;
   margin-top: 1rem;
 
   &:hover {
-    background-color: $active;
+    background-color: $secondary;
     color: $white !important;
     text-decoration: none !important;
   }

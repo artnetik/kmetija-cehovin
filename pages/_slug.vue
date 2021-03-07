@@ -3,20 +3,6 @@
     <Intro :body="page" :photo="page.photo">
       <h1>{{ page.title }}</h1>
     </Intro>
-    <div v-if="blocks.length">
-      <ImageBlock
-        v-for="(block, i) in blocks"
-        :key="block.id"
-        :title="block.title"
-        :icon="block.icon"
-        :photo="block.photo"
-        :bg="block.bg"
-        :position="block.position"
-        :reverse="i % 2 ? true : false"
-      >
-        <nuxt-content :document="block" />
-      </ImageBlock>
-    </div>
     <div v-if="page.menu === 'Novice'">
       <NewsPost
         v-for="post in news"
@@ -33,7 +19,6 @@
 </template>
 
 <script>
-
 export default {
   async asyncData ({ $content, params, $router }) {
     const slug = params.slug || 'kmetija'
@@ -52,3 +37,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .logos {
+    max-width: 800px;
+    margin: 1.5rem auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+</style>

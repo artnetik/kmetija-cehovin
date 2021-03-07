@@ -14,6 +14,6 @@ export const actions = {
       .only(['path', 'menu', 'icon', 'id'])
       .sortBy('id', 'des')
       .fetch()
-    commit('setLinks', links)
+    commit('setLinks', links.filter(link => link.menu))
   }
 }

@@ -8,6 +8,11 @@ icon:
  width: 47
  height: 39
 ---
+<div class="logos">
+
+[![](images/logotipi.svg)](/razvoj-podezelja)
+
+</div>
 
 <besedilo>
   <naslov>Pristno, naravno, domače.</naslov>

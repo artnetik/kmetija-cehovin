@@ -1,6 +1,10 @@
 <template>
   <div class="intro">
-    <div ref="parallax" class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
+    <div
+      ref="parallax"
+      :class="[photo ? 'foto' : 'title']"
+      :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`"
+    >
       <slot />
     </div>
     <div v-if="body">
@@ -87,6 +91,27 @@ export default {
   display: grid;
   align-content: center;
   will-change: background-position-y;
+}
+
+.title {
+  background-color: white !important;
+  display: grid;
+  align-content: center;
+  min-height: 350px;
+  padding-top: 6rem;
+
+  h1 {
+    font-weight: normal;
+    line-height: 1.2;
+    color: $base;
+    text-shadow: none;
+
+    @include breakpoint(medium) {
+      padding-top: 3rem;
+      font-size: 55px;
+      max-width: 700px;
+    }
+  }
 }
 
 h1 {
