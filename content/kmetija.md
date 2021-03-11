@@ -15,7 +15,7 @@ icon:
 </div>
 
 <besedilo>
-  <naslov>Pristno, naravno, domače.</naslov>
+  <naslov>Pristno, naravno, domače</naslov>
 
   Na naši kmetiji vas razvajamo s sadovi vinogradništva in sadjarstva.
 
