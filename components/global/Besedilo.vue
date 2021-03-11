@@ -1,12 +1,12 @@
 <template>
-  <div :class="{levo}" class="text-container responsive-margin">
+  <div :class="['text-container', 'responsive-margin', { levo }]">
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  porps: {
+  props: {
     levo: {
       default: false,
       type: Boolean
@@ -27,6 +27,7 @@ export default {
   margin-right: auto;
   max-width: 620px;
   padding: 1rem 1.5rem;
+  text-align: center;
 
   @include breakpoint(medium) {
     padding: 1rem;

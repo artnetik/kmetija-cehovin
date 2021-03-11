@@ -22,18 +22,11 @@
 export default {
   async asyncData ({ $content, params, $router }) {
     const slug = params.slug || 'kmetija'
-    const page = await $content().where({ slug }).fetch().then(data => data[0])
-    const blocks = await $content(`${slug}/blocks`)
-      .sortBy('order', 'asc')
-      .fetch()
-      .catch(() => {
-        return { blocks: [] }
-      })
+    const page = await $content().where({ slug })
+      .fetch().then(data => data[0])
     const news = await $content('novice').fetch()
-      .catch(() => {
-        return { news: [] }
-      })
-    return { blocks, page, news }
+      .catch(() => { return { news: [] } })
+    return { page, news }
   }
 }
 </script>
