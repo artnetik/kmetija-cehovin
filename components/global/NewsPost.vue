@@ -2,7 +2,7 @@
   <div class="post">
     <Naslov>{{ title }}</Naslov>
 
-    <div class="photo mt-1">
+    <div class="photo mt-2">
       <div class="date">
         <div class="day">
           {{ day }}
@@ -80,7 +80,6 @@ export default {
   color: $white;
   text-align: center;
   font-weight: bold;
-  font-family: 'Courier Prime', monospace;
 
   .day {
     font-family: 'Caveat Brush', cursive;
@@ -90,7 +89,7 @@ export default {
 }
 
 .hr {
-  height: 3px;
+  height: 2px;
   background-color: rgba($secondary, 0.5);
   margin: 1rem auto;
 }

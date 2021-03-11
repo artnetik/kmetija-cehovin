@@ -96,19 +96,22 @@ export default {
 .title {
   background-color: white !important;
   display: grid;
-  align-content: center;
-  min-height: 350px;
-  padding-top: 6rem;
+  align-content: end;
+  padding-top: 5rem;
+
+  @include breakpoint(medium) {
+    padding-top: 8rem;
+  }
 
   h1 {
     font-weight: normal;
     line-height: 1.2;
-    color: $base;
+    color: $secondary;
     text-shadow: none;
 
     @include breakpoint(medium) {
       padding-top: 3rem;
-      font-size: 55px;
+      font-size: 60px;
       max-width: 700px;
     }
   }

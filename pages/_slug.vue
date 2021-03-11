@@ -9,7 +9,7 @@
         :key="post.id "
         :title="post.title"
         :photo="post.photo"
-        :date="post.createdAt"
+        :date="post.slug"
       >
         <nuxt-content :document="post" />
       </NewsPost>
@@ -22,9 +22,13 @@
 export default {
   async asyncData ({ $content, params, $router }) {
     const slug = params.slug || 'kmetija'
-    const page = await $content().where({ slug })
+    const page = await $content()
+      .where({ slug })
       .fetch().then(data => data[0])
-    const news = await $content('novice').fetch()
+
+    const news = await $content('novice')
+      .sortBy('slug', 'desc')
+      .fetch()
       .catch(() => { return { news: [] } })
     return { page, news }
   }

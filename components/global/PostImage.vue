@@ -1,5 +1,5 @@
 <template>
-  <img :src="imgSrc()" :alt="alt">
+  <img v-if="src" :src="imgSrc()" :alt="alt">
 </template>
 
 <script>
