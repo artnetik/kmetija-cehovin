@@ -16,7 +16,7 @@ title: Dvig prepoznavnosti Kmetije Čehovin, Ana-Bella
 | <!-- --> | <!-- --> |
 |---|---|
 |__Naziv odobrene operacije:__| Dvig prepoznavnosti Kmetije Čehovin, Ana-Bella |
-|__Akronim operacije:__| Ana-Bella |
+|__Akronim operacije:__| Ana Bella |
 |__Upravičenec/izvajalec operacije:__| Aleš Čehovin |
 |__Celotna vrednost operacije z DDV:__| 6.063,00 € |
 |__Sofinanciranje EKSRP/LEADER:__| 4.224,50 € |
@@ -24,13 +24,13 @@ title: Dvig prepoznavnosti Kmetije Čehovin, Ana-Bella
 
 ### CILJI
 
-* razvijati in dvigniti prepoznavnost blagovne znamko Ana Bella, s katero bo kmetija postala inovativno, privlačno področje za ohranjanje vinogradništva in razvoj vinarskega turizma,
+* razvijati in dvigniti prepoznavnost blagovne znamke Ana Bella, s katero bo kmetija postala inovativno in privlačno področje za ohranjanje vinogradništva ter razvoj vinarskega turizma,
 * širiti prepoznavnost Kmetije Čehovin in njenih izdelkov ter storitev,
 
 ### REZULTATI in KAZALNIKI
 
 * Operacija obsega vzpostavitev dveh povezanih novih spletnih strani, ki bosta prispevali tudi k poživitvi turizma in izboljšanju prepoznavnosti Kmetije Čehovin ter njene blagovne znamke Ana Bella
-* Aktivnost/vključevanje ranljivih skupin (upokojencev) v prostovoljno delo na kmetiji (npr.: zelena dela v vinogradu, obiranje sadja, trgatev, delo v kleti…).
+* Aktivnost/vključevanje ranljivih skupin (upokojencev) v prostovoljno delo na kmetiji (npr.: zelena dela v vinogradu, obiranje sadja, trgatev, delo v kleti...)
 
 Z vzpostavitvijo dveh spletnih strani bo postala Kmetija Čehovin prepoznavna tudi na širšem tržišču. S tem bo omogočen njen gospodarski razvoj in odprte možnosti za njen nadaljnji obstoj. Ker ima Kmetija Čehovin s svojim potomstvom številne možnosti za nadaljnji obstoj, ji vzpostavitev dveh spletnih strani omogoča njeno prepoznavnost in tržnost. Spletni strani bosta ponujali tudi trženje novih produktov (blagovne znamke vina Ana Bella) in drugih doživetji na kmetiji in okolici. Za samo izvedbo operacije, upravljanje rezultatov in nadaljnji razvoj kmetije bo skrbela Dagmar Čehovin, žena Aleša Čehovin, ki je lastnik kmetije ter njuni potomci. Operacija ima trajnostno noto, saj se bodo po njenem zaključku aktivnosti nadaljevale – ustvarjali se bodo novi produkti (vina) in nove tržne možnosti za razvoj turizma (glamping turizem).
 
