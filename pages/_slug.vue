@@ -35,6 +35,7 @@ export default {
   .logos {
     max-width: 800px;
     margin: 1.5rem auto;
+    padding: 0 1rem;
 
     img {
       max-width: 100%;

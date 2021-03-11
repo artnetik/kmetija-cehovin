@@ -115,7 +115,7 @@ export default {
 }
 
 h1 {
-  padding-top: 2rem;
+  padding: 2rem 1rem;
   font-family: 'Caveat Brush', cursive;
   font-size: 50px;
   color: #fff;

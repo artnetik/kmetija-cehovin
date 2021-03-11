@@ -36,11 +36,16 @@ export default {}
 
 <style lang="scss" scoped>
 @import '~assets/styles/variables';
+@import '~assets/styles/mixins';
 
 .footer {
   color: rgba($secondary, 0.8);
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   text-align: center;
+
+  @include breakpoint(medium) {
+    padding: 3rem 0;
+  }
 }
 
 .partners {
@@ -61,17 +66,25 @@ export default {}
 
 .povezave {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+  margin: 1rem;
 
   a {
-    margin: 10px 2rem;
+    margin: 0 1rem;
+
+    @include breakpoint(medium) {
+      margin: 10px 2rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 
 .copyright {
   font-size: 15px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 </style>
