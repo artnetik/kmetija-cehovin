@@ -10,11 +10,10 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ commit }, { $content }) {
-    const links = await $content({ deep: true })
-      .where({ slug: 'index' })
-      .without(['body'])
+    const links = await $content()
+      .only(['path', 'menu', 'icon', 'id'])
       .sortBy('id', 'des')
       .fetch()
-    commit('setLinks', links)
+    commit('setLinks', links.filter(link => link.menu))
   }
 }

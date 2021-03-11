@@ -1,19 +1,17 @@
 .btn {
-  border: 1px solid $base;
+  background-color: $green;
   border-radius: 5px;
-  color: $base;
+  color: $white !important;
   display: inline-block;
-  font-family:
-    'Courier Prime',
-    monospace;
   font-weight: bold;
-  padding: 8px 1.5rem;
+  padding: 10px 1.5rem;
   text-decoration: none;
   transition: all $quick;
   margin-top: 1rem;
 
   &:hover {
-    background-color: $base;
-    color: $white;
+    background-color: $secondary;
+    color: $white !important;
+    text-decoration: none !important;
   }
 }

@@ -9,7 +9,7 @@
         <n-link
           v-for="link in $store.state.links"
           :key="link.id"
-          :to="link.menu ? link.menu.url : link.dir"
+          :to="link.path === '/kmetija' ? '/' : link.path"
           class="link"
         >
           <div class="icon">
@@ -22,7 +22,7 @@
           </div>
           <div
             class="label"
-            v-text="link.menu ? link.menu.label : link.title "
+            v-text="link.menu"
           />
         </n-link>
       </nav>

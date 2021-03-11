@@ -44,8 +44,8 @@ export default {
   googleFonts: {
     families: {
       'Caveat+Brush': true,
-      'Courier+Prime': {
-        wght: [400, 700]
+      'Open+Sans': {
+        wght: [400, 600]
       }
     },
     display: 'swap'
@@ -61,6 +61,16 @@ export default {
       easing: 'ease-in-out'
     }]
   ],
+
+  content: {
+    liveEdit: false
+  },
+
+  build: {
+    loaders: {
+      scss: { sourceMap: false }
+    }
+  },
 
   generate: {
     routes: ['/']

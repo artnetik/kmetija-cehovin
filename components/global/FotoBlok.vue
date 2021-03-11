@@ -1,11 +1,10 @@
 <template>
-  <div class="image-block" :class="{reverse}" :style="`background-color: #${bg};`">
-    <div class="photo" :style="`background-image: url('/images/blocks/${photo}'); background-position: center ${position}`" />
+  <div class="image-block" :class="{reverse}" :style="`background-color: #${ozadje};`">
+    <div class="photo" :style="`background-image: url('/images/blocks/${foto}'); background-position: center ${position}`" />
     <div class="content">
       <div class="icon mb-2">
-        <img :src="`/icons/${icon}`" :alt="title">
+        <img :src="`/icons/${ikona}.svg`">
       </div>
-      <Naslov>{{ title }}</Naslov>
       <div class="text-container">
         <slot />
       </div>
@@ -20,15 +19,11 @@ export default {
       type: Boolean,
       default: false
     },
-    title: {
-      default: '',
+    ikona: {
+      default: 'list',
       type: String
     },
-    icon: {
-      default: '',
-      type: String
-    },
-    photo: {
+    foto: {
       default: '',
       type: String
     },
@@ -36,7 +31,7 @@ export default {
       default: 'center',
       type: String
     },
-    bg: {
+    ozadje: {
       default: 'f1f2f2',
       type: String
     }
@@ -76,8 +71,12 @@ export default {
     padding: 4rem;
 
     .text-container {
-      max-width: 500px;
+      max-width: 550px;
     }
+  }
+
+  .povezava {
+    margin-top: 1rem;
   }
 }
 

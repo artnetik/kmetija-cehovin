@@ -10,10 +10,10 @@
       <n-link
         v-for="(link, i) in $store.state.links"
         :key="i"
-        :to="link.menu ? link.menu.url : link.dir"
+        :to="link.path"
         class="link"
       >
-        <span @click="open = false" v-text="link.menu ? link.menu.label : link.title " />
+        <span @click="open = false" v-text="link.menu" />
       </n-link>
 
       <!-- <a

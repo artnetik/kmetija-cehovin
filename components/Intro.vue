@@ -1,9 +1,13 @@
 <template>
   <div class="intro">
-    <div ref="parallax" class="foto" :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`">
+    <div
+      ref="parallax"
+      :class="[photo ? 'foto' : 'title']"
+      :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`"
+    >
       <slot />
     </div>
-    <div v-if="body.body.children.length" class="text-container mt-4">
+    <div v-if="body">
       <nuxt-content :document="body" />
     </div>
   </div>
@@ -67,7 +71,7 @@ export default {
 
       return (
         rect.bottom >= 0 &&
-          rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight)
       )
     }
   }
@@ -77,14 +81,6 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/styles/mixins';
 @import '~assets/styles/variables';
-
-.intro {
-  padding: 0 0 2rem;
-
-  @include breakpoint(medium) {
-    padding: 0 0 5rem;
-  }
-}
 
 .foto {
   background-repeat: no-repeat;
@@ -97,17 +93,41 @@ export default {
   will-change: background-position-y;
 }
 
+.title {
+  background-color: white !important;
+  display: grid;
+  align-content: center;
+  min-height: 350px;
+  padding-top: 6rem;
+
+  h1 {
+    font-weight: normal;
+    line-height: 1.2;
+    color: $base;
+    text-shadow: none;
+
+    @include breakpoint(medium) {
+      padding-top: 3rem;
+      font-size: 55px;
+      max-width: 700px;
+    }
+  }
+}
+
 h1 {
   padding-top: 2rem;
   font-family: 'Caveat Brush', cursive;
   font-size: 50px;
   color: #fff;
   text-align: center;
+  line-height: 1;
+  margin: 0 auto;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
   @include breakpoint(medium) {
     padding-top: 3rem;
-    font-size: 80px;
+    font-size: 72px;
+    max-width: 700px;
   }
 }
 </style>

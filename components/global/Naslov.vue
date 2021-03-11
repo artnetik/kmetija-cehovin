@@ -26,6 +26,7 @@ export default {}
   padding: 0 10px;
   text-align: center;
   color: $secondary;
+  line-height: 0.9;
 
   @include breakpoint(medium) {
     font-size: 46px;
