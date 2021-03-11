@@ -24,7 +24,7 @@
       </div>
 
       <div class="copyright">
-        Kmetija Čehovin &copy; 2020 Vse pravice pridržane
+        Kmetija Čehovin &copy; 2021 Vse pravice pridržane
       </div>
     </div>
   </div>
@@ -39,7 +39,6 @@ export default {}
 
 .footer {
   color: rgba($secondary, 0.8);
-  font-family: 'Courier Prime', monospace;
   padding: 3rem 0;
   text-align: center;
 }

@@ -58,18 +58,11 @@ export default {
     background: $secondary;
     color: $white;
     display: grid;
-    font-family:
-      'Courier Prime',
-      monospace;
     line-height: 1.5em;
     min-height: 400px;
     place-content: center;
     padding: 2rem 0;
     text-align: center;
-
-    @include breakpoint(medium) {
-      text-align: left;
-    }
   }
 
   address {
