@@ -3,7 +3,7 @@
     <div class="photo" :style="`background-image: url('/images/blocks/${foto}'); background-position: center ${position}`" />
     <div class="content">
       <div class="icon mb-2">
-        <img :src="`/icons/${ikona}.svg`">
+        <img :src="`/icons/${ikona}.svg`" :alt="`Ikona ${ikona}`">
       </div>
       <div class="text-container">
         <slot />

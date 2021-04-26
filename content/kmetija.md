@@ -10,7 +10,7 @@ icon:
 ---
 <div class="logos">
 
-[![](images/logotipi.svg)](/razvoj-podezelja)
+[![Razvoj podeželja](images/logotipi.svg)](/razvoj-podezelja)
 
 </div>
 
