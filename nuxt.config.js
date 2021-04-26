@@ -48,7 +48,7 @@ export default {
         wght: [400, 600]
       }
     },
-    display: 'swap'
+    display: 'auto'
   },
   publicRuntimeConfig: {
     mapsApiKey: process.env.VUE_APP_GOOGLE_MAPS_API_KEY

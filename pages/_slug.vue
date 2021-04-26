@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params, $router }) {
+  async asyncData ({ $content, params }) {
     const slug = params.slug || 'kmetija'
     const page = await $content()
       .where({ slug })

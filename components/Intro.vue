@@ -3,7 +3,7 @@
     <div
       ref="parallax"
       :class="[photo ? 'foto' : 'title']"
-      :style="`background-color: ${bgColor}; background-image: url('/images/${photo}')`"
+      :style="bgPhoto"
     >
       <slot />
     </div>
@@ -36,6 +36,11 @@ export default {
   data: () => ({
     el: null
   }),
+  computed: {
+    bgPhoto () {
+      return this.photo ? `background-color: ${this.bgColor}; background-image: url('/images/${this.photo}')` : ''
+    }
+  },
   mounted () {
     this.el = this.$refs.parallax
     window.requestAnimationFrame = window.requestAnimationFrame ||
