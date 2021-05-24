@@ -10,6 +10,10 @@ export default {
     levo: {
       default: false,
       type: Boolean
+    },
+    novica: {
+      default: false,
+      type: Boolean
     }
   }
 }
@@ -28,6 +32,10 @@ export default {
   max-width: 620px;
   padding: 1rem 1.5rem;
   text-align: center;
+
+  .post & {
+    max-width: 720px;
+  }
 
   @include breakpoint(medium) {
     padding: 1rem;
