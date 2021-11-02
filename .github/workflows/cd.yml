@@ -24,10 +24,10 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies
-        run: yarn
+        run: npm install
 
       - name: Generate
-        run: yarn run generate
+        run: npm run generate
         env:
           NODE_ENV: "production"
           VUE_APP_GOOGLE_MAPS_API_KEY: ${{ secrets.MAPS_API }}
